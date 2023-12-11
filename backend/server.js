@@ -9,6 +9,10 @@ const cors = require('cors')
 //express app
 const app = express()
 
+app.get('/', (req, res) => {
+       res.send('Hello World')
+     })
+     
 //middleware
 app.use(cors(
        {
@@ -41,7 +45,4 @@ mongoose.connect(process.env.MONGO_URI) // is equal to connected to database fir
               console.log('There is an error Controller ');
        })
 
-app.get("/", (req,res)=>{
-       res.json("connected")
-})
 
