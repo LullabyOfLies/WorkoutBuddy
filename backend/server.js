@@ -12,11 +12,11 @@ const app = express()
 app.get('/', (req, res) => {
        res.send('Hello World')
      })
-     
+
 //middleware
 app.use(cors(
        {
-              origin: ["https://workout-buddy-api-kappa.vercel.app/"],
+              origin: ["https://workout-buddy-api-kappa.vercel.app"],
               methods : ["POST", "GET", "DELETE"],
               credentials: true
        }
