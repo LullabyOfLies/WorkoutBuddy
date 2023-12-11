@@ -12,7 +12,7 @@ export const useLogin = () => {
     setError(null);
 
     try {
-      const response = await axios.post('http://localhost:3000/api/user/login', { email, password });
+      const response = await axios.post('https://workout-buddy-api-kappa.vercel.app/api/user/login', { email, password });
 
       // Save the user to local storage
       localStorage.setItem('user', JSON.stringify(response.data));
