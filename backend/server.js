@@ -10,7 +10,11 @@ const cors = require('cors');
 const app = express()
 
 //middleware
-app.use(cors());
+app.use(cors({
+       origin : ["https://workout-buddy-api-kappa.vercel.app/"],
+       methods : ["POST", "DEL", "GET"],
+       credentials: true
+}));
 app.use(express.json())
 
 app.use((req,res,next)=>{
