@@ -30,7 +30,7 @@ app.use('/api/user', userRoutes)
 mongoose.connect(process.env.MONGO_URI) // is equal to connected to database first 
        .then(()=>{ 
               //listen for request from a URL or port that will be sent to the database
-              app.listen(process.env.PORT, () => {
+              app.listen(process.env.DOMAIN, () => {
                      console.log("connected to db and listening on port 3000!")
               })
        })

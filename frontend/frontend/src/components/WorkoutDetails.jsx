@@ -14,7 +14,7 @@ const WorkoutDetails = ({ workout }) => {
             return
           }
             try{
-              const response = await axios.delete('http://localhost:3000/api/workouts/'+ workout._id, {
+              const response = await axios.delete('workout-buddy-api-kappa.vercel.app/api/workouts/'+ workout._id, {
                 headers: {
                   'Authorization': `Bearer ${user.token}`
                 }
