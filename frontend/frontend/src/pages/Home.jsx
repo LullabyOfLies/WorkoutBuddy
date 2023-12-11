@@ -13,7 +13,7 @@ const Home = () => {
 
   const fetchWorkouts = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/workouts',{
+      const response = await axios.get('https://workout-buddy-api-kappa.vercel.app/api/workouts',{
         headers: {
           'Authorization' : `Bearer ${user.token}`
         }
