@@ -23,7 +23,7 @@ const WorkoutForm = () => {
     const workout = { title, load, reps };
 
     try {
-      const response = await axios.post('https://workout-buddy-api-kappa.vercel.app/api/workouts', workout, {
+      const response = await axios.post('http://localhost:3000/api/workouts', workout, {
         headers: {
           'Authorization': `Bearer ${user.token}`
         }
