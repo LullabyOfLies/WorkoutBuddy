@@ -4,7 +4,6 @@ const workoutRoutes = require('./routes/workouts')
 const userRoutes = require('./routes/user')
 const mongoose = require('mongoose')
 const cors = require('cors')
-const routes1 = require('../routes/')
 
 //express app
 const app = express()
