@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 //middleware
 app.use(cors(
        {
-              origin: ["https://workout-buddy-api-kappa.vercel.app"],
+              origin: ["https://workout-buddy-api-self.vercel.app"],
               methods : ["POST", "GET", "DELETE"],
               credentials: true
        }
@@ -29,8 +29,8 @@ app.use((req,res,next)=>{
 })
 
 //routes
-app.use('/api/workouts',workoutRoutes)
-app.use('/api/user', userRoutes)
+app.use('/apis/workouts',workoutRoutes)
+app.use('/apis/user', userRoutes)
 
 //connect to db
 mongoose.connect(process.env.MONGO_URI) // is equal to connected to database first 
