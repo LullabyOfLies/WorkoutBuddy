@@ -5,6 +5,7 @@
   ],
   "routes": [
     { "src": "/", "dest": "/" },
+    { "src": "/api/server", "dest": "/" },
     { "src": "/routes/workout", "dest": "/" },
     { "src": "/routes/user", "dest": "/" },
     { "src": "/models/userModel", "dest": "/" },
