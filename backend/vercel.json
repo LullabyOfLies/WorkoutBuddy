@@ -2,5 +2,15 @@
   "version": 2,
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/" },
+    { "src": "/routes/workout", "dest": "/" },
+    { "src": "/routes/user", "dest": "/" },
+    { "src": "/models/userModel", "dest": "/" },
+    { "src": "/models/workoutModel", "dest": "/" },
+    { "src": "/controllers/userController", "dest": "/" },
+    { "src": "/controllers/workoutController", "dest": "/" },
+    { "src": "//middleware/requireAuth", "dest": "/" }
   ]
  }
