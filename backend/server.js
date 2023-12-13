@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 //middleware
 app.use(cors(
        {
-              origin: ["https://workout-buddy-api-self.vercel.app"],
+              origin: ["https://workout-buddy-two.vercel.app/login"],
               methods : ["POST", "GET", "DELETE"],
               credentials: true
        }
