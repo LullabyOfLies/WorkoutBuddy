@@ -1,6 +1,6 @@
 const express = require('express');
-const workoutRoutes = require('./routes/workouts')
-const userRoutes = require('./routes/user')
+const workoutRoutes = require('../routes/workouts')
+const userRoutes = require('../routes/user')
 const mongoose = require('mongoose')
 const cors = require('cors')
 
@@ -48,6 +48,3 @@ mongoose.connect(MONGO_URI) // is equal to connected to database first
               console.log(error)
               console.log('There is an error Controller ');
        })
-
-
-module.exports = app
