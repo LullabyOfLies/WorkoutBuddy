@@ -40,7 +40,7 @@ app.use('/api/user', userRoutes)
 mongoose.connect(MONGO_URI) // is equal to connected to database first 
        .then(()=>{ 
               //listen for request from a URL or port that will be sent to the database
-              app.listen((PORT), () => {
+              app.listen(('https://workout-buddy-api.vercel.app'), () => {
                      console.log("connected to db and listening")
               })
        })
