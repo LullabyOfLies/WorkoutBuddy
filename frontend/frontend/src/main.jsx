@@ -12,5 +12,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <App />
       </WorkoutContextProvider>
     </AuthContextProvider>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
